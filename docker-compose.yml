@@ -6,4 +6,10 @@ services:
     environment:
       - "POSTGRES_USER=leap-sls"
       - "POSTGRES_PASSWORD=postgres"
+  app:
+    image: "docker_test"
+    ports:
+      - "8080:3001"
+    
+
   
